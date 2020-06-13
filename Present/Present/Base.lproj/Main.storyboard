@@ -15,28 +15,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG5-rS-HJU">
-                                <rect key="frame" x="181" y="433" width="53" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG5-rS-HJU">
+                                <rect key="frame" x="180.5" y="438" width="53" height="30"/>
                                 <state key="normal" title="Present"/>
                                 <connections>
                                     <action selector="experimentWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6c2-QA-LcM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9x-KY-4BK">
+                                <rect key="frame" x="181.5" y="484" width="51" height="30"/>
+                                <state key="normal" title="Activity"/>
+                                <connections>
+                                    <action selector="activityWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Nj-Fv-9PP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvZ-CJ-4qj">
+                                <rect key="frame" x="190.5" y="522" width="33" height="30"/>
+                                <state key="normal" title="Alert"/>
+                                <connections>
+                                    <action selector="alertWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLE-e5-Qs8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wG5-rS-HJU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0dH-Zb-8OU"/>
+                            <constraint firstItem="o9x-KY-4BK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7UZ-So-1Pc"/>
+                            <constraint firstItem="uvZ-CJ-4qj" firstAttribute="top" secondItem="o9x-KY-4BK" secondAttribute="bottom" constant="8" id="DBC-yD-MfY"/>
+                            <constraint firstItem="uvZ-CJ-4qj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WvZ-6B-H9J"/>
                             <constraint firstItem="wG5-rS-HJU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xKI-in-M1J"/>
+                            <constraint firstItem="o9x-KY-4BK" firstAttribute="top" secondItem="wG5-rS-HJU" secondAttribute="bottom" constant="16" id="z10-v8-XaB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityButton" destination="o9x-KY-4BK" id="hWO-yx-AHg"/>
+                        <outlet property="alertButton" destination="uvZ-CJ-4qj" id="ZYo-Nw-WqW"/>
                         <outlet property="presentButton" destination="wG5-rS-HJU" id="ovM-ok-o8Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
